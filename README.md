@@ -21,7 +21,7 @@ This is a two services version of a telegram bot
 *  sends messages to bots "/send" endpoint 
 
 
-<p>Eureka registry and discovery need to `bot` and `processor` could be discovered without configuration changes </p>
+Eureka registry and discovery need to `bot` and `processor` could be discovered without configuration changes
 
 ### Local setup 
 
@@ -37,6 +37,10 @@ By default, it should be accessible at http://localhost:8087 . After startup ope
 >1. http://localhost:8088/swagger-ui/ - Api Documentation in swagger
 >1. http://localhost:8088/h2-console - H2 database (no pass, just press "Connect" button)
 
+To gain benefits of this configuration try the run.sh script configuration. <br />
+Firstly, now you can process as many Updates as you want - it's only depends on resources available. <br />
+Secondly, noe you can connect to a single processing algorithm as many different bots as you want: 
+Telegram, Instagram, whatsapp, Viber, Slack ect.<br />
 
 ### No eureka setup
 #### EMERGENCY! EUREKA MAY BE INCORRECTLY CLAIMING INSTANCES ARE UP WHEN THEY'RE NOT. RENEWALS ARE LESSER THAN THRESHOLD AND HENCE THE INSTANCES ARE NOT BEING EXPIRED JUST TO BE SAFE.

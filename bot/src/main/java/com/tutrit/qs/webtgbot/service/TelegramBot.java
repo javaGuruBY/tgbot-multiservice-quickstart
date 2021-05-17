@@ -15,7 +15,6 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 @PropertySource("classpath:application.properties")
 public class TelegramBot extends TelegramLongPollingBot {
     private final ProcessorProxy proxy;
-//    private final MessageController messageController;
 
     @Value("${bot.username}")
     private String botUsername;
