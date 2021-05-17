@@ -1,15 +1,15 @@
 # tgbot-microservice-quickstart
 This is a two services version of a telegram bot
-###default ports:
-####8087 - eureka
-####8088 - processor
-####8089 - bot
-<p>Bot acts like a proxy. It's responsibility is to:  </p>
+### default ports:
+#### 8087 - eureka
+#### 8088 - processor
+#### 8089 - bot
+<p>Bot acts like a proxy. It responsible to:  </p>
 
 * listen for telegram updates 
-*  send updates to processor 
-*  listen for new messages to send from processor 
-*  send messages from "/send" endpoint 
+* send updates to processor 
+* listen for new messages to send from processor 
+* send messages from "/send" endpoint 
 
 <p>Processor do all the job:  </p>
 
@@ -23,7 +23,7 @@ This is a two services version of a telegram bot
 
 <p>Eureka registry and discovery need to `bot` and `processor` could be discovered without configuration changes </p>
 
-###Local setup 
+### Local setup 
 
 1. Run eureka service. You could build *.jar (recommended) or run it with idea. 
 By default, it should be accessible at http://localhost:8087 . After startup open browser and verify eureka running  
@@ -38,8 +38,8 @@ By default, it should be accessible at http://localhost:8087 . After startup ope
 >1. http://localhost:8088/h2-console - H2 database (no pass, just press "Connect" button)
 
 
-###No eureka setup
-####EMERGENCY! EUREKA MAY BE INCORRECTLY CLAIMING INSTANCES ARE UP WHEN THEY'RE NOT. RENEWALS ARE LESSER THAN THRESHOLD AND HENCE THE INSTANCES ARE NOT BEING EXPIRED JUST TO BE SAFE.
+### No eureka setup
+#### EMERGENCY! EUREKA MAY BE INCORRECTLY CLAIMING INSTANCES ARE UP WHEN THEY'RE NOT. RENEWALS ARE LESSER THAN THRESHOLD AND HENCE THE INSTANCES ARE NOT BEING EXPIRED JUST TO BE SAFE.
 <p>Eureka registry and discovery need to be updated regularly and sometimes between startups it could claim that 
 instances are running when they are not. That is why for developing purpose you may want to disable eureka and let 
 services communicate to each other directly. To do that </p>
