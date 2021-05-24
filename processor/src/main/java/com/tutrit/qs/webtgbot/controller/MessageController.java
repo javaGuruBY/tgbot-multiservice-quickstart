@@ -2,6 +2,8 @@ package com.tutrit.qs.webtgbot.controller;
 
 import com.tutrit.qs.webtgbot.service.MessageService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.hateoas.PagedModel;
+import org.springframework.hateoas.RepresentationModel;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
